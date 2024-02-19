@@ -1,0 +1,46 @@
+[
+    {
+        "nombre": "Mouse",
+        "estatus": 1
+    },
+    {
+        "nombre": "Teclado",
+        "estatus": 1
+    },
+    {
+        "nombre": "Monitor",
+        "estatus": 1
+    },
+    {
+        "nombre": "MousePad",
+        "estatus": 0
+    },
+    {
+        "nombre": "Sillas",
+        "estatus": 1
+    },
+    {
+        "nombre": "Mesas",
+        "estatus": 1
+    },
+    {
+        "nombre": "Bocinas",
+        "estatus": 1
+    },
+    {
+        "nombre": "Audifonos",
+        "estatus": 1
+    },
+    {
+        "nombre": "Cargadores",
+        "estatus": 1
+    },
+    {
+        "nombre": "Adaptadores",
+        "estatus": 1
+    },
+    {
+        "nombre": "USB",
+        "estatus": 1
+    }
+]
