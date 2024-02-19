@@ -1,10 +1,10 @@
-import { Categorias } from "./components/Categorias";
+import { Categories } from "./components/Categories";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 function App() {
 	return (
 		<>
-			<Categorias />
+			<Categories />
 		</>
 	)
 }
