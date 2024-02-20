@@ -1,9 +1,8 @@
 import { useState } from "react";
-import categorias from "../data/categorias.json";
 
-const useCategoryData = () => {
+const useDataLocal = (initialData) => {
 
-    const [ data, setData ] = useState(categorias);
+    const [ data, setData ] = useState(initialData);
     const [ isLoading, setIsLoading ] = useState(true);
     const [ error, setError ] = useState(false);
 
@@ -19,4 +18,4 @@ const useCategoryData = () => {
     }
 }
 
-export default useCategoryData;
+export default useDataLocal;

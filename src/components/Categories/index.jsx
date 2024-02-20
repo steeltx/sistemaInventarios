@@ -1,15 +1,16 @@
 import React from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';       
-import useCategoriasDatos from '../../hooks/useCategoryData';
+import useDataLocal from '../../hooks/useDataLocal';
 import { AddCategory } from './components/AddCategory';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
+import categorias from '../../data/categorias.json';
 
 export const Categories = () => {
 
     // usar el custom hook
-    const { data, addData } = useCategoriasDatos();
+    const { data, addData } = useDataLocal(categorias);
 
     const onAddCategory = (newCategory) => {
 		// si ya existe la categoria anteriormente, no agregar
