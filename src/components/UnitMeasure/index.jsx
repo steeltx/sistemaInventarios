@@ -1,4 +1,5 @@
 import { DataTable } from 'primereact/datatable';
+import { Badge } from 'primereact/badge';
 import { Column } from 'primereact/column';       
 import useDataLocal from '../../hooks/useDataLocal';
 import { InputText } from 'primereact/inputtext';
@@ -23,6 +24,7 @@ export const UnitMeasure = () => {
     const onDelete = ( { nombre } ) => {
         return (
             <Button 
+                icon="pi pi-trash"
                 severity="danger" 
                 label="Eliminar"
                 onClick={() => deleteUnit(nombre)}
@@ -85,7 +87,9 @@ export const UnitMeasure = () => {
                         field="estatus" 
                         header="Estatus" 
                         sortable 
-                        body={(rowData) => rowData.estatus === 1 ? 'Activo' : 'Inactivo'}
+                        body={(rowData) => rowData.estatus === 1 
+                            ? <Badge value="Activo"></Badge> 
+                            : <Badge value="Inactivo" severity="warning"></Badge>}
                     ></Column>
                     <Column 
                         rowEditor={true} 
