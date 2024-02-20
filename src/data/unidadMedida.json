@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Pieza",
+        "clave": "pza",
+        "estatus": 1
+    },
+    {
+        "nombre": "Kilogramo",
+        "clave": "kg",
+        "estatus": 1
+    },
+    {
+        "nombre": "Litro",
+        "clave": "l",
+        "estatus": 0
+    }
+]
